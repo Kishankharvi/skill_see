@@ -1,0 +1,15 @@
+public int getMiddle() {
+    if (isEmpty()) {
+        System.out.println("Stack is Empty");
+        return -1;
+    }
+
+    int mid;
+    if (size() % 2 == 0) {
+        mid = (size() / 2) - 1;  // lower middle
+    } else {
+        mid = size() / 2;  // middle
+    }
+
+    return stack[mid];
+}

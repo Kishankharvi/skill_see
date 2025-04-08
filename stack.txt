@@ -1,0 +1,14 @@
+To find the middle element of a stack in Python, we can use either a list (as Python’s built-in stack structure) or create a custom stack class. The key idea is to track the size of the stack and access the middle element based on its index.
+
+In a list-based implementation, a stack is typically represented as stack = [], and we use append() to push and pop() to remove elements. To find the middle element, calculate the middle index using len(stack) // 2. If the number of elements is odd, this gives the exact middle. For even-sized stacks, this returns the lower-middle element.
+
+
+
+stack = [1, 2, 3, 4, 5]
+middle_index = len(stack) // 2
+middle_element = stack[middle_index]
+print("Middle element:", middle_element)
+
+
+
+This prints 3 for the given stack.
